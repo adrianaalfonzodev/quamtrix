@@ -12,7 +12,7 @@ const navLinks = [
 
 export default function Header() {
   return (
-    <header className="fixed bg-white w-full">
+    <header className="absolute bg-white w-full">
       <div className="mx-auto px-16 py-8 flex gap-3 items-center">
         <Link
           href="/"

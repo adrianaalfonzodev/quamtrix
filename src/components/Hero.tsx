@@ -1,12 +1,12 @@
 'use client'
-import '@/i18n'
+// import '@/i18n'
 import Image from 'next/image'
-import { useTranslation } from 'react-i18next'
+// import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
 import AnimatedText from './ui/AnimatedText/AnimatedText'
 
 export default function Hero() {
-  const { t } = useTranslation()
+  // const { t } = useTranslation()
 
   const [mounted, setMounted] = useState(false)
 
@@ -50,7 +50,8 @@ export default function Hero() {
         <div className="w-full px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-12 container mx-auto h-full">
           <div className="pl-16 w-[600px] min-h-[350px] z-20">
             <AnimatedText
-              text={t('hero_title')}
+              // text={t('hero_title')}
+              text="Tu visión, nuestro código"
               fontSize="120px"
             ></AnimatedText>
           </div>
