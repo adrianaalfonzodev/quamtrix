@@ -6,6 +6,7 @@
   line-height: 0.9;
   letter-spacing: -7.2px;
 }
+
 .cursor {
   display: inline-block;
   width: 0.1em;
@@ -15,7 +16,18 @@
   animation: blink 0.8s steps(1) infinite;
   vertical-align: text-bottom;
 }
+
 @keyframes blink {
   0%, 100% { opacity: 0; }
   50% { opacity: 1; }
+}
+
+@media (max-width: 768px) {
+  .animated {
+    font-size: clamp(2.5rem, 4vw, 3rem) !important;
+    letter-spacing: 1;
+    margin-top: 10px;
+    text-align: center;
+    height: 80px;
+  }
 }

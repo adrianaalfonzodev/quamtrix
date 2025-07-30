@@ -37,7 +37,7 @@ export default function Hero() {
       </div>
       {/* main */}
       <div className="container mx-auto h-full flex items-center z-10 relative">
-        <div className="w-full z-20 flex flex-col items-center justify-center pt-4">
+        <div className="w-full z-20 flex flex-col items-center justify-center pt-4 px-3 md:px-0">
           <h2 className='uppercase text-secondary tracking-widest font-bold'>&lt;Bienvenido a Quamtrix /&gt;</h2>
           <AnimatedText
             // text={t('hero_title')}
@@ -45,7 +45,7 @@ export default function Hero() {
             fontSize="120px"
             color="#fff"
           ></AnimatedText>
-          <p className='text-white mt-4 text-lg'>Creamos soluciones digitales para ti, mientras tú te enfocas en lo que realmente importa: tu empresa.</p>
+          <p className='text-white text-center mt-4 md:text-lg'>Creamos soluciones digitales para ti, mientras tú te enfocas en lo que realmente importa: tu empresa.</p>
         </div>
       </div>
     </section>
