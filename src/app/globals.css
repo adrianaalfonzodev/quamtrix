@@ -12,8 +12,26 @@
   --font-mono: var(--font-geist-mono);
 }
 
+.text-secondary {
+  color: #e89b4c;
+}
+.bg-secondary {
+  background-color: #e89b4c;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: "Roboto", Helvetica, sans-serif;
+}
+
+.bg-img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: #041722;
+  opacity: 0.70;
 }

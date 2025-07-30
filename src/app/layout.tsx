@@ -3,9 +3,9 @@ import { ReactNode } from 'react'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 
-import { Roboto } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 
-const roboto = Roboto({
+const jakarta = Plus_Jakarta_Sans({
   subsets: ['latin'],
   weight: ['400', '600', '800'],
   variable: '--font-jakarta',
@@ -20,10 +20,12 @@ export const metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="es">
-      <body className={`${roboto.className} min-h-screen flex flex-col`}>
-        <Header />
-        <main className="flex-grow w-full mx-auto">{children}</main>
-        <Footer />
+      <body className={`${jakarta.className}`}>
+        <main className="main-wrapper">
+          <Header />
+          {children}
+          <Footer />
+        </main>
       </body>
     </html>
   )

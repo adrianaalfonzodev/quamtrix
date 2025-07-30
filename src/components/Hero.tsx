@@ -17,8 +17,15 @@ export default function Hero() {
   if (!mounted) return null
 
   return (
-    <section className="h-[900px]">
-      <div className="absolute left-0 top-0 bottom-0 flex gap-3 z-10">
+    <section
+      className="h-screen mt-[-113px] relative bg-img"
+      style={{
+        backgroundImage: 'url(/images/bg-hero.jpg)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
+      }}
+    >
+      <div className="flex gap-3 z-10 absolute top-0 w-full">
         <Image
           src="/images/shape.png"
           alt="Ilustración Hero"
@@ -28,33 +35,16 @@ export default function Hero() {
           className="opacity-30"
         />
       </div>
-      <div className="container relative mx-auto h-full z-20">
-        <div className="absolute right-0 top-0 flex gap-3 bg-white">
-          <Image
-            src="/images/slide-2.png"
-            alt="Ilustración Hero"
-            width={230}
-            height={745}
-            priority
-            className="mix-blend-luminosity opacity-70"
-          />
-          <Image
-            src="/images/slider-1.png"
-            alt="Ilustración Hero"
-            width={582}
-            height={745}
-            priority
-            className="mix-blend-luminosity opacity-70"
-          />
-        </div>
-        <div className="w-full px-6 md:px-12 flex flex-col-reverse md:flex-row items-center gap-12 container mx-auto h-full">
-          <div className="pl-16 w-[600px] min-h-[350px] z-20">
-            <AnimatedText
-              // text={t('hero_title')}
-              text="Tu visión, nuestro código"
-              fontSize="120px"
-            ></AnimatedText>
-          </div>
+      {/* main */}
+      <div className="container mx-auto h-full flex items-center z-10 relative">
+        <div className="w-full z-20 flex flex-col items-center justify-center">
+          <h2 className='uppercase text-secondary tracking-widest font-bold'>&lt;Bienvenido a Quamtrix /&gt;</h2>
+          <AnimatedText
+            // text={t('hero_title')}
+            text="Tu visión, nuestro código"
+            fontSize="120px"
+            color="#fff"
+          ></AnimatedText>
         </div>
       </div>
     </section>

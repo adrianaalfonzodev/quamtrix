@@ -9,7 +9,17 @@ const jakarta = Plus_Jakarta_Sans({
   display: 'swap'
 })
 
-export default function AnimatedText({ text, speed = 60, fontSize }: { text: string; speed?: number; fontSize?: string }) {
+export default function AnimatedText({
+  text,
+  speed = 60,
+  fontSize,
+  color = '#000'
+}: {
+  text: string
+  speed?: number
+  fontSize?: string
+  color?: string
+}) {
   const [visibleText, setVisibleText] = useState('')
 
   useEffect(() => {
@@ -26,10 +36,13 @@ export default function AnimatedText({ text, speed = 60, fontSize }: { text: str
   return (
     <p
       className={`${jakarta.className} ${styles.animated}`}
-      style={{ fontSize }}
+      style={{ fontSize, color }}
     >
       {visibleText}
-      <span className={styles.cursor} />
+      <span
+        className={styles.cursor}
+        style={{ backgroundColor: color }}
+      />
     </p>
   )
 }
