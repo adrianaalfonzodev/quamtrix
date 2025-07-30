@@ -10,7 +10,7 @@ const features = [
 
 export default function About() {
   return (
-    <section className="mt-12">
+    <section className="my-12 md:my-32">
       <div className="container mx-auto px-4">
         <div className="columns-1 gap-4 md:columns-2">
           <div className="flex justify-center mb-8  relative">
