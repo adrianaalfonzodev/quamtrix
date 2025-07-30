@@ -3,7 +3,7 @@
 import Image from 'next/image'
 // import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
-import AnimatedText from './ui/AnimatedText/AnimatedText'
+import AnimatedText from '../ui/AnimatedText/AnimatedText'
 
 export default function Hero() {
   // const { t } = useTranslation()
