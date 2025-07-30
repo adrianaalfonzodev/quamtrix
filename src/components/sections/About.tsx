@@ -11,7 +11,7 @@ const features = [
 export default function About() {
   return (
     <section className="mt-12">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-4">
         <div className="columns-1 gap-4 md:columns-2">
           <div className="flex justify-center mb-8  relative">
             <Image
@@ -26,7 +26,7 @@ export default function About() {
               alt="Sobre Nosotros"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg mr-10 mt-4 relative z-10"
+              className="rounded-lg shadow-lg md:mr-10 mt-4 relative z-10"
             />
             <div className='absolute z-20 left-0 bottom-0 w-52 h-auto'>
                 
@@ -36,16 +36,16 @@ export default function About() {
             <p className="text-gray-500 mb-3 text-lg">
               <span className="text-secondary">{'// '}</span> Conócenos
             </p>
-            <h2 className="text-5xl font-bold mb-6">
+            <h2 className="text-3xl md:text-5xl font-bold mb-6">
               Ofrecemos soluciones digitales a medida
             </h2>
-            <p className="text-lg text-gray-500">
+            <p className="md:text-lg text-gray-500">
               Con más de 5 años de experiencia, creamos sitios web y
               aplicaciones modernas que impulsan negocios y mejoran su presencia
               online. Combinamos diseño, funcionalidad y tecnología para
               construir experiencias digitales efectivas.
             </p>
-            <ul className="mt-8 text-lg">
+            <ul className="mt-8 md:text-lg">
               {features.map((text, index) => (
                 <li
                   className="flex items-center gap-2 mb-2"
